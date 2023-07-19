@@ -12,6 +12,13 @@ const UseState = () => {
       the DOM will re-render*/}
       <button onClick={() => setTheme("dark")}>Dark</button>
       <button onClick={() => setTheme("light")}>Light</button>
+      <button
+        onClick={() =>
+          theme === "dark" ? setTheme("light") : setTheme("dark")
+        }
+      >
+        Toggle
+      </button>
       <h2>{count}</h2>
       <button onClick={() => setCount((count += 1))}>Increment</button>
       <button onClick={() => setCount((count -= 1))}>Decrement</button>
