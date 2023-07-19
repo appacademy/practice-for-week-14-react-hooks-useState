@@ -20,8 +20,20 @@ const UseState = () => {
         Toggle
       </button>
       <h2>{count}</h2>
-      <button onClick={() => setCount((count += 1))}>Increment</button>
-      <button onClick={() => setCount((count -= 1))}>Decrement</button>
+      <button
+        onClick={() => {
+          setCount((prevCount) => prevCount + 1);
+        }}
+      >
+        Increment
+      </button>
+      <button
+        onClick={() => {
+          setCount((prevCount) => prevCount - 1);
+        }}
+      >
+        Decrement
+      </button>
     </div>
   );
 };
