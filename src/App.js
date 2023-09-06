@@ -1,7 +1,10 @@
-import UseState from './components/UseState';
+import UseState from "./components/UseState";
 
 function App() {
-  return <UseState />;
+  return (
+    // <UseState />
+    <h1>hello</h1>
+  );
 }
 
 export default App;
